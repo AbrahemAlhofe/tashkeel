@@ -273,13 +273,23 @@ section {
       }
     }
 
+    .qoute:not(:first-child) {
+      background-color: var(--blue);
+      color: white;
+    }
+
     .cell {
       width: var(--cell-width);
       height: var(--cell-height);
     }
 
     .book {
-      background-color: var(--blue);
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(0.9);
+      }
     }
 
     .cell:not(.book) {
