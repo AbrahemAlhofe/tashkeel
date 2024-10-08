@@ -499,7 +499,7 @@ ul {
   #events-headline {
     color: #00535e;
     position: relative;
-    font-size: min(18vw, 4rem);
+    font-size: min(15vw, 4rem);
     text-align: center;
     font-weight: bolder;
 
@@ -561,8 +561,9 @@ ul {
     background-color: white;
     border-radius: var(--border-radius);
     box-shadow: 0 0.25rem 1.2875rem rgba(0, 0, 0, 0.05);
-    width: 25em;
-    height: 12em;
+    width: 17em;
+    min-height: 12em;
+    flex-wrap: wrap;
   }
   
   .event-card__logo {
@@ -582,7 +583,7 @@ ul {
     font-weight: 900;
     line-height: 2.8rem;
     text-align: right;
-    width: 90%;
+    width: 75%;
   }
   
   .event-card__location {
