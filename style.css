@@ -238,6 +238,12 @@ ul {
 
     }
 
+    svg {
+      path {
+        stroke: white;
+        stroke-width: 10px;
+      }
+    }
 
   }
 
@@ -431,7 +437,8 @@ ul {
       position: relative;
       overflow: hidden;
       width: fit-content;
-
+      padding-inline: 0.55em;
+      
       svg {
         position: absolute;
         width: 1em;
@@ -441,8 +448,12 @@ ul {
 
     }
 
-    div:first-child svg {
-      left: 0em;
+    div:first-child {
+      opacity: 0.99;
+      svg {
+        left: 0em;
+        z-index: -1;
+      }
     }
 
     div:nth-child(2) svg {
@@ -453,7 +464,7 @@ ul {
     }
 
     div:nth-child(3) svg {
-      right: 50%;
+      right: 60%;
       path {
         fill: var(--blue);
       }
