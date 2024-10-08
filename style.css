@@ -25,6 +25,12 @@ section {
 
 }
 
+a {
+
+  text-decoration: none;
+
+}
+
 #hero {
   display: flex;
   flex-direction: column;
@@ -156,7 +162,7 @@ section {
 
     }
 
-    .category:first-child {
+    #more-categories {
       background-color: var(--blue);
       display: flex;
       align-items: center;
@@ -169,6 +175,10 @@ section {
       font-weight: bolder;
       color: #00525b;
       position: relative;
+
+      div {
+        height: 90%;
+      }
 
       svg {
         position: absolute;
@@ -287,6 +297,7 @@ section {
       background-size: cover;
       background-position: center;
       transition: transform 0.2s;
+      cursor: pointer;
       &:hover {
         transform: scale(0.9);
       }
