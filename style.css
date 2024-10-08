@@ -12,6 +12,18 @@
   --red-2: #5C0000;
 }
 
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes move {
+  to {
+    transform: translateX(15em);
+  }
+}
+
 * {
   font-family: 'Cairo';
 }
@@ -165,6 +177,10 @@ ul {
         width: calc(7 * (var(--card-width) + var(--gap)));
         gap: var(--gap);
         display: flex;
+        
+        animation: move 1s linear infinite;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -1s);
 
       }
 
@@ -239,6 +255,10 @@ ul {
     }
 
     svg {
+      transform-origin: center;
+      animation: rotate 1s linear infinite;
+      animation-play-state: paused;
+      animation-delay: calc(var(--scroll) * -1s);
       path {
         stroke: white;
         stroke-width: 10px;
